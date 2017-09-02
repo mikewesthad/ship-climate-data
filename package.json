@@ -1,0 +1,32 @@
+{
+  "name": "cliwoc21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "byline": "^5.0.0",
+    "cheerio": "^1.0.0-rc.2",
+    "electron": "^1.7.5",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "p5": "^0.5.14",
+    "prettier": "^1.6.1",
+    "streaming-json-stringify": "^3.1.0",
+    "through2": "^2.0.3"
+  },
+  "scripts": {
+    "start": "electron .",
+    "parse-database-structure": "node lib/parse-database-structure.js",
+    "build-ship-paths": "node lib/build-ship-paths.js",
+    "build-all-records": "node lib/build-all-records.js"
+  },
+  "prettier": {
+    "printWidth": 100
+  },
+  "author": "",
+  "license": "ISC"
+}
