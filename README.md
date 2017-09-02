@@ -6,7 +6,7 @@ This repository contains the code to analyze and visualize the Climatological Da
 
 ## The Data
 
-The CLIWOC dataset includes 287,114 records. Each record represents an individual log and has a number of possible associated variables - including wind direction, wind speed, air temperature, etc. They are listed in `cliwoc 2_1.htm` from [here](https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:40826/tab/2). For convenience, you can see a version hosted in this repo [here](mikewesthad.com/database-structure.html).
+The CLIWOC dataset includes 287,114 records. Each record represents an individual log and has a number of possible associated variables - including wind direction, wind speed, air temperature, etc. They are listed in `cliwoc 2_1.htm` from [here](https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:40826/tab/2). For convenience, you can see a version hosted in this repo [here](https://mikewesthad.com/database-structure.html).
 
 ## Installation
 
