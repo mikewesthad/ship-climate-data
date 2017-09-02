@@ -1,0 +1,2423 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0050)http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm -->
+<HTML><HEAD><TITLE>CLIWOC 2.1</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.2769" name=GENERATOR></HEAD>
+<BODY text=#000000 bgColor=#ffffff>
+<TABLE cellSpacing=2 cellPadding=4 width="100%" align=left border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <P><B><FONT face="Verdana, Arial, Helvetica, sans-serif" size=5>CLIWOC 
+      Release 2.1</FONT></B></P>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>This file 
+      contains the description of the full database in ASCII format, which 
+      contains 287,114 records of fixed length. Since the record length is 8,571 
+      characters, it is recommended to use either the Access version (<A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21_97.htm" 
+      target=_blank>97</A>, <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21_2000.htm" 
+      target=_blank>2000</A> or <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21_2002-3.htm">2002-2003</A>), 
+      the <A href="http://www.knmi.nl/cliwoc/download/CLIWOC21CORE.htm" 
+      target=_blank>core</A> version or the <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21LIM.htm" 
+      target=_blank>limited</A> version (not containing large 
+      memo-fileds).</FONT> <FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>The records are built according to the proposed format, given in 
+      the IMMA document, updated 14 March 2007 (<A 
+      href="http://www.cdc.noaa.gov/coads/e-doc/imma/imma.pdf">www.cdc.noaa.gov/coads/e-doc/imma/imma.pdf</A>). 
+      The idea behind this format is that the user can easily start with the 
+      data, without having to concern about unit conversions. The first 108 
+      characters of the complete records are the same as those in the core 
+      version <A href="http://www.knmi.nl/cliwoc/download/CLIWOC21CORE.htm" 
+      target=_blank>CLIWOC21CORE.txt</A>. The attachment that follows the core, 
+      starts with an identification group and the attachment itself follows. The 
+      actual attachment begins at character 114. The attachment has fixed field 
+      lengths. The explanation of the fields is given <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#att">below</A>.<BR></FONT></P></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>All data in 
+      the core part is expressed in present day SI-units (e.g. UTC, Celsius, 
+      nautical miles, degrees, m/s and hPa).&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>In the 
+      process of keying the data from different sources, duplicate records may 
+      have been keyed when more than one source was available from the same 
+      voyage. Usually these records are not exact copies, but are more or less 
+      complementary to each other. The identification of the duplicates is 
+      handled in the ShipLogbookID file (<I><A 
+      href="http://www.knmi.nl/cliwoc/download/shiplogbookid21.htm" 
+      target=_blank>ShipLogbookid21.txt</A></I></FONT>). If the user wants to 
+      avoid duplicates, he/she has to ignore those ID’s that have the 
+      Duplicate-field in the ShipLogbookID file set to other values than 
+      0.</FONT> <BR></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>In the 
+      following tables the record in the file <I>CLIWOC21.txt</I> is explained. 
+      The first table gives an explanation of the <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#core">core</A> 
+      part of the complete record, while the second table gives the explanation 
+      of the complete <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#att">attachment</A></FONT>&nbsp;</TD></TR></TBODY></TABLE>&nbsp; 
+<A name=core></A>
+<TABLE cellSpacing=2 cellPadding=4 width="100%" align=left border=2>
+  <TBODY>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>Variable</B></FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>Start</B></FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>End</B></FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>Format</B></FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>Description</B></FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>YR</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>4</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A4</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Year (UTC)</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>MO</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>5</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>6</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Month (UTC)</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>DY</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Day (UTC)</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>HR</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>9</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>12</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A4</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Hour (UTC)</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2><A 
+      name=lat></A>LAT</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>13</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>17</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A5</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Latitude in hundredths of a degree; North of the equator is 
+      positive, South of the equator is negative</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2><A 
+      name=lon></A>LON</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>18</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>23</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A6</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Longitude in hundredths of a degree; convention: 0-359.99, East of 
+      Greenwich</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>IM</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>24</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>25</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>IMMA version; 0 = this prototype version</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ATTC</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>26</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>26</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Attachment Count; in this version there is one attachment, so the 
+      count is 1</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>TI</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>27</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>27</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Time indicator; only 0 (= nearest whole hour)</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LI</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>28</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>28</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Latitude/longitude indicator; all 6 (= other)</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>DS</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>29</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>29</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>VS</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>30</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>30</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>NID</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>31</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>32</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>II</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>33</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>34</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>ID 
+      indicator; all 10 (= composite information from early ship data). 
+    </FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ID</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>35</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>43</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A9</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Identification; In this release a number is given that identifies 
+      the ship and the ships' logbook and the possibility that the current 
+      record is a duplicate.<BR>With this number you can look up this 
+      information in the file: <I><A 
+      href="http://www.knmi.nl/cliwoc/download/shiplogbookid21.htm" 
+      target=_blank>ShipLogbookid21.txt</A></I></FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>C1</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>44</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>45</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Country code; gives the nationality of the ship that made the 
+      observation: <BR>ES = Spain<BR>FR = France<BR>NL = The Netherlands<BR>UK = 
+      United Kingdom<BR>SE = Sweden<BR>US = USA<BR>DE = Germany, in this case 
+      especially it is restricted to Hamburg<BR>DK = Denmark</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>DI</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>46</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>46</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2><A 
+      name=windd></A>D</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>47</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>49</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A3</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Wind direction (from which the wind is blowing) in whole degrees 
+      from:<BR>1-360; 361 = calm, 362 = variable. It is not clear from many 
+      logbook entries whether the wind direction has been corrected for the 
+      magnetic variation (or <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#decl">declination</A>). 
+      To avoid any misunderstanding, all winds from reports that included a 
+      valid position in the period 1750-1854 were corrected. All other wind 
+      directions are given without being corrected.</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>WI</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>50</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>50</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Wind speed indicator; all reported wind forces are more or less 
+      given in Beaufort classes (WI = 5); </FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>W</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>51</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>53</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A3</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Wind speed; given in tenths of a meter per second. From the 
+      descriptive terms of wind force given in the observations, a first 
+      division into “Beaufort” classes resulted in the m/s given here. Most of 
+      the values are the midpoints of each Beaufort class, cf. WMO-1100. In 
+      those cases that more information was available, other values may have 
+      been used. Bft 0: 0-0.2 m/s<BR>Bft 1: 0.3-1.5 m/s<BR>Bft 2: 1.6-3.3 
+      m/s<BR>Bft 3: 3.4-5.4 m/s<BR>Bft 4: 5.5-7.9 m/s<BR>Bft 5: 8.0-10.7 
+      m/s<BR>Bft 6: 10.8-13.8 m/s<BR>Bft 7: 13.9-17.1 m/s<BR>Bft 8 17.2-20.7 
+      m/s<BR>Bft 9: 20.8-24.4 m/s<BR>Bft 10: 24.5-28.4 m/s<BR>Bft 11: 28.5-32.6 
+      m/s<BR>Bft 12: &gt;32.6 m/s</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>VI</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>54</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>54</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>VV</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>55</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>56</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>WW</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>57</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>58</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>W1</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>59</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>59</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>SLP</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>60</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>64</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A5</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Sea level pressure in tenths of hPa. Still under study; No 
+      temperature correction was applied and for this moment the following 
+      factors have been used for the conversion to hPa: <BR>2.54 cm in an 
+      inch<BR>13.596 specific gravity of mercury<BR>980.65 cm/s gravity at 45° 
+      latitude</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>65</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>65</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>PPP</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>66</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>68</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A3</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>IT</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>69</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>69</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>Indicator 
+      for air temperatures, originating from: <BR>3 = mixed precision 
+      Celsius<BR>7 = mixed precision Fahrenheit<BR>9 = mixed precision 
+      Réaumur</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>AT</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>70</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>73</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A4</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Air temperature in tenths of a degree Celsius</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>WBTI</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>74</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>74</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>WBT</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>75</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>78</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A4</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>DPTI</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>79</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>79</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>DPT</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>80</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>83</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A4</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>SI</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>84</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>85</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Method by which SST was taken; 10 = implied bucket</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>SST</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>86</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>89</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A4</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Sea surface temperature in tenths of a degree Celsius</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>N</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>90</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>90</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>NH</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>91</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>91</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>CL</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>92</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>92</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>HI</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>93</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>93</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>H</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>94</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>94</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>CM</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>95</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>95</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>CH</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>96</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>96</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>WD</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>97</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>98</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>WP</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>99</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>100</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>WH</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>101</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>102</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>SD</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>103</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>104</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>SP</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>105</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>106</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>SH</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>107</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>108</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Not in use</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ATTI</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>109</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>110</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Attachment ID (=99)</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ATTL</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>111</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>112</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Attachment length (set at 0, meaning "unspecified")</FONT></TD></TR>
+  <TR>
+    <TD width=74><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ATTE</FONT></TD>
+    <TD width=52><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>113</FONT></TD>
+    <TD width=42><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>113</FONT></TD>
+    <TD width=75><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width=466><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Attachment encoding (blank: ASCII)</FONT></TD></TR></TBODY></TABLE><BR>
+<P>&nbsp;</P>
+<P><A name=att></A><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+size=2>Here follows the description of the attachment to the <A 
+href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#core">core</A>. The 
+total record length (core + attachment) is 8569, excluding CR/LF.</FONT> </P>
+<TABLE cellSpacing=2 cellPadding=4 width="100%" border=2>
+  <TBODY>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>Variable</B></FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>Start</B></FONT> </TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>End</B></FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>Format</B></FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>Description</B></FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=4><B>Remarks</B></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>InstAbbr</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>114</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>121</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A8</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Abbreviation of the Institute where the original data is 
+      stored</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>InstName</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>122</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>171</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A50</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name of the Institute where the original data is stored</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>InstPlace</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>172</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>181</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A10</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Place of the Institute where the original data is stored</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>InstLand</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>182</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>195</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A14</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Country of the Institute where the original data is 
+stored</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>NumberEntry</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>196</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>210</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Administrative number under which the data is found within the 
+      Institute</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>NameArchiveSet</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>211</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>227</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A17</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Administrative name under which the data is found within the 
+      Institute</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ArchivePart</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>228</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>266</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A39</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Part of the archive set in which the data is found</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Specification</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>267</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>297</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A31</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Specification of the part of the archive set in which the data is 
+      found</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LogbookIdent</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>298</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>327</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A30</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Identification of the logbook that holds the underlying 
+    data</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>a number or code</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LogbookLanguage</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>328</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>334</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A7</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Language used in the logbook</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A name=logid></A>ImageNumber</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>335</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>357</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A23</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Identification Number of the original image</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Illustr</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+size=2>358</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+size=2>358</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>A1</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>True if 
+      there is an illustration available on the current page of the <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#logid">logbook</A>. 
+      <BR></FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>drLatDeg</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>359</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>360</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Dead reckoning degrees latitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>drLatMin</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>361</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>362</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Dead reckoning minutes latitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>drLatSec</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>363</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>364</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Dead reckoning seconds latitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>drLatHem</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>365</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>365</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Dead reckoning hemisphere (N/S)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>drLongDeg</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>366</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>368</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A3</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Dead reckoning degrees longitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>drLongMin</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>369</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>370</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Dead reckoning minutes longitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>drLongSec</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>371</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>372</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Dead reckoning seconds longitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>drLongHem</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>373</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>373</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Dead reckoning hemishere (E/W)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LatDeg</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>374</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>375</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>True degrees latitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LatMin</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>376</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>377</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>True minutes latitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LatSec</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>378</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>379</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>True seconds latitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LatHem</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>380</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>380</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>True Hemisphere (N/S)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LongDeg</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>381</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>383</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A3</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>True degrees longitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LongMin</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>384</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>385</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>True minutes longitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LongSec</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>386</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>387</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>True seconds longitude</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LongHem</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>388</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>388</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>True Hemisphere (E/W)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LatInd</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>389</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>390</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Position Indicator, explains what was the origin of the given <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#lat">final 
+      decimal latitude</A></FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1: originates from dead reckoning<BR>2: originates from true 
+      navigation (bearing/distance, celestial)<BR>3: Interpolated manually<BR>4: 
+      Interpolated<BR>5: Inserted actual position (ports, islands, etc.)<BR>6: 
+      Missing </FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LonInd</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>391</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>392</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Position Indicator, explains what was the origin of the given <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#lon">final 
+      decimal longitude</A></FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1: originates from dead reckoning<BR>2: originates from true 
+      navigation (bearing/distance, celestial)<BR>3: Interpolated manually<BR>4: 
+      Interpolated<BR>5: Inserted actual position (ports, islands, etc.)<BR>6: 
+      Missing</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ZeroMeridian</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+size=2>393</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+size=2>435</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+size=2>A43</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>Meridian 
+      that is used as the reference for the ships' longitude</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>See: <A 
+      href="http://www.knmi.nl/cliwoc/download/geodata21.htm" 
+      target=_blank>Geodata21.txt</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LMname1</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>436</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>485</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A50</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name of first landmark of which a bearing was recorded</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LMdirection1</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>486</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>500</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Bearing of the first landmark</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LMdistance1</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>501</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>507</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A7</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Distance to the first landmark</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#dtlu">Units</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LMname2</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>508</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>557</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A50</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name of second landmark of which a bearing was recorded</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LMdirection2</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>558</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>572</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Bearing of the second landmark</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LMdistance2</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>573</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>579</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A7</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Distance to the second landmark</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#dtlu">Units</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LMname3</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>580</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>629</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A50</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name of third landmark of which a bearing was recorded</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LMdirection3</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>630</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>644</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Bearing of the third landmark</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LMdistance3</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>645</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>651</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A7</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Distance to the third landmark</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#dtlu">Units</A></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>PosCoastal</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+size=2>652</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+size=2>652</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>A1</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>1 If 
+      position is considered to be coastal (in port or near coastal 
+      disturbances)</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Calendar</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>653</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>654</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Calendar used in original: 1=Julian; 2=Gregorian</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Year</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>655</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>658</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A4</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Year of the observation from logbook </FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Month</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>659</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>660</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Month of the observation from logbook</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Day</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>661</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>662</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Day of the observation from logbook</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>TimeOB</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>663</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>664</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Time on board of the observation from logbook </FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>DayOfTheWeek</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>665</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>673</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A9</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Day of the week (e.g. Monday - Sunday)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>PartDay</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>674</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>683</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A10</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>If applicable e.g morning, evening or night may be noted</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Watch</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>684</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>688</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A5</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Watch, name of the period of 4 hours which is known as a "watch" or 
+      duty on board ships</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Glasses</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>689</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>690</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Number of glasses within a watch; one watch equals 8 
+    glasses</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>StartDay</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>691</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>705</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Start time of the ships' day (midnight or midday)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ShipName</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>706</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>735</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A30</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name of the ship</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Nationality</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>736</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>743</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A8</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Nationality of ship and crew</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ShipType</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>744</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>758</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Type of ship; e.g. schooner, barque, frigate</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Company</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>759</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>792</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A34</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Company which owns or manages the ship</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>OtherShipInformation</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>793</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1601</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A809</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Other ship information</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name1</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1602</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1631</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A30</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name of principal observer</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Rank1</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1632</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1656</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A25</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Full rank of principal observer</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name2</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1657</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1686</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A30</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name of second observer</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Rank2</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1687</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1711</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A25</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Full rank of second observer</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name3</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1712</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1741</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A30</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name of third observer</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Rank3</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1742</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1766</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A25</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Full rank of third observer</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LifeOnBoard</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1767</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2445</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A679</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Any remarks, found in the logbook on this particular day, about 
+      life, illness, treatment, etc. on board.</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>VoyageFrom</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2446</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2490</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A45</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Place or country where the ship departed from</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>VoyageTo</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2491</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2540</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A50</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Place or country where the ship sailed to</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Anchored</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2541</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2541</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1 If ship at anchor or moored</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>AnchorPlace</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2542</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2591</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A50</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Ship at anchor or moored at this place</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>DASnumber</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>2592</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>2597</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>A6</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>Dutch 
+      Asiatic Shipping Number<BR></FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>VoyageIni</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2598</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2605</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A8</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Initial date of the start of the voyage of this ship. Format is 
+      year-month-day (YYYYMMDD) and is extracted from the logbooks date (i.e. it 
+      is not corrected to UTC)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>CMG</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2606</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2620</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Course made good; course of the ship during the past 24 
+    hours</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ShipSpeed</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2621</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2625</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A5</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Ships' speed; average speed of the ship during the previous 24 
+      hours</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Distance</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2626</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2632</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A7</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Distance travelled during the previous 24 hours</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#dtu">Units</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>EncName</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2633</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2657</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A25</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name of ship that was encountered</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>For cross-references encounters with other ships or fleets were 
+      noted.</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>EncNat</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2658</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2682</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A25</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Nationality of ship that was encountered</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>EncRem</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>2683</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>3361</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A679</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Remarks on encountering</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>CargoMemo</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>3362</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>3569</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A208</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Any remark found in the logbook on this day about the 
+    cargo</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ShipAndRigMemo</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>3570</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>4433</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A864</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Any remark, found in the logbook on this particular day, about the 
+      ship, sails, rigging, etc.</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>BiologyMemo</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>4434</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>4918</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A485</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Any remark, found in the logbook on this particular day, about any 
+      biological item </FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>WarsAndFightsMemo</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>4919</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>5480</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A562</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Any remark, found in the logbook on this particular day, about wars 
+      and fights in which this ship was involved</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>OtherRem</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>5481</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7252</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1772</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Other remarks, that were not possible to put in the other remark 
+      fields</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A name=atru></A>AirThermReadingUnits</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7253</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7262</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A10</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Units of the (outside) air thermometer reading</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A name=sstu></A>SSTReadingUnits</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7263</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7277</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Units of the sea surface thermometer reading</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A name=apru></A>AirPressureReadingUnits</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7278</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7296</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A19</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Units of the reading of the air pressure<BR></FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>We've established 20 different units or ways of writing down the 
+      air pressure. All used notations are described <A 
+      href="http://www.knmi.nl/cliwoc/download/SLP_examples.htm" 
+      target=_blank>here</A>. </FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A name=btru></A>BarTempReadingUnits</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7297</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7306</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A10</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Units of the reading of the attached thermometer</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>RefenceCourse</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7307</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7321</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Reference that is used for the ships' course (e.g. true north or 
+      magnetic north)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ReferenceWindDirection</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7322</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7336</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Reference that is used for the wind direction (e.g. true north or 
+      magnetic north)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2><A 
+      name=decl></A>Decl</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>7337</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>7340</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>A4</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>It is 
+      generally accepted by the CLIWOC team that the wind directions, reported 
+      by the ships’ officers, were relative to the magnetic North direction. 
+      Navigators were well aware of the difference between the true and magnetic 
+      north direction, but the compasses (we assumed that the bearing-compasses 
+      were mostly used for determining the wind direction) were not always 
+      adjusted. Therefore the wind direction has to be corrected. The magnetic 
+      declination (or variation, as it is known on board ships) is given for the 
+      whole CLIWOC period (1750-1850) for every 5x5 degree square. The number 
+      was added to the wind direction to get the true wind direction (<A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#windd">D</A>).</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>DistUnits</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7341</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7360</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A20</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Units of distances, other than the following two fields</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A name=dtlu></A>DistToLandmarkUnits</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7361</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7367</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A7</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Units of distances to landmarks</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A name=dtu></A>DistTravelledUnits</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7368</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7374</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A7</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Units of distances travelled by the ship</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>LongitudeUnits</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7375</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7399</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A25</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Longitudes used (e.g. 180E-180W or 0-360E)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A name=uom></A>UnitsOfMeasurement</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7400</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7444</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A45</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Units of other values that may be used (e.g. current speed 
+      units)</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A name=hu></A>HumidityUnits</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7445</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7451</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A7</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Units of the reading of the humidity instrument</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A name=watpu></A>WaterAtThePumpUnits</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7452</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7466</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Units of the amount of water reported at the pump</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>WindScale</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7467</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7486</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A20</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Name of, or reference to the wind scale that has been 
+used</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>BarometerType</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7487</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7499</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A13</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Barometer type</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>In some occasions there were two readings in the logbook. One from 
+      the (mercury) barometer and one from the sympisiometer. When the first 
+      reading was not available, the reading of the sympisiometer was recorded 
+      in the database. </FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>BarometerBrand</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>7500</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>7505</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>A6</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>Brand of the 
+      barometer<BR></FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>BarometerIndex</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>7506</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>7508</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>A3</FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>Index 
+      correction to the barometer<BR></FONT></TD>
+    <TD><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+    size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>HumidityMethod</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7509</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7518</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A10</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Method of measuring the humidity</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>EstError</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7519</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7538</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A20</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Established error of the compass</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ApplError</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7539</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7558</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A20</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Applied correction to the compass</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>TairReading</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7559</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7564</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A6</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Reading of the (outside) air thermometer</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#atru">Units</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>SSTReading</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7565</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7570</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A6</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Reading of the sea surface thermometer</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#sstu">Units</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>BaroReading</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7571</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7578</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A8</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Reading of the air pressure</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#apru">Units</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>AllWindDirections</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7579</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7676</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A98</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>All reported wind directions on this day; the wind direction is the 
+      direction that points to where the wind comes from.</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>CurrentDir</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7677</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7691</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A15</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Direction of the current; This direction points to where the 
+      current is flowing towards to</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>In many Dutch (extract) logbooks, symbols were used. These symbols 
+      were replaced by <A 
+      href="http://www.knmi.nl/cliwoc/download/weather20.htm" 
+      target=_blank>codes</A>, to make entry of this data possible</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>CurrentSpeed</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7692</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7741</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A50</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Speed of the current</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#uom">Units</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>BarTempReading</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7742</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7745</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A4</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Reading of the attached thermometer</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#btru">Units</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>PumpWater</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7746</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7749</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A4</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Amount of water reported at the pump</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#watpu">Units</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>HumReading</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7750</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7753</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A4</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Reading of the humidity instrument</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2><A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#hu">Units</A></FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>AllWindForces</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7754</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7995</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A242</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>All reported wind forces on this day</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Weather</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>7996</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8145</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A150</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Weather description</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>In many Dutch (extract) logbooks, symbols were used. These symbols 
+      were replaced by <A 
+      href="http://www.knmi.nl/cliwoc/download/weather20.htm" 
+      target=_blank>codes</A>, to make entry of this data possible</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>PrecipitationDescriptor</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8146</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8245</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A100</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Information about the precipitation</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>StateSea</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8246</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8395</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A150</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>State of the sea</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>In many Dutch (extract) logbooks, symbols were used. These symbols 
+      were replaced by <A 
+      href="http://www.knmi.nl/cliwoc/download/weather20.htm" 
+      target=_blank>codes</A>, to make entry of this data possible</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>ShapeClouds</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8396</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8445</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A50</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Shape of the clouds</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>In many Dutch (extract) logbooks, symbols were used. These symbols 
+      were replaced by <A 
+      href="http://www.knmi.nl/cliwoc/download/weather20.htm" 
+      target=_blank>codes</A>, to make entry of this data possible</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>DirClouds</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8446</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8489</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A44</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Directions of the clouds</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Clearness</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8490</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8539</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A50</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Clearness/brightness of the sky</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>In many Dutch (extract) logbooks, symbols were used. These symbols 
+      were replaced by <A 
+      href="http://www.knmi.nl/cliwoc/download/CLIWOC21all.htm#dtlu" 
+      target=_blank>codes</A>, to make entry of this data possible</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>CloudFrac</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8540</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8541</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A2</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Clouded part of the sky</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Gusts</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8542</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8542</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1 If wind gusts are reported</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Rain</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8543</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8543</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1 If rain was reported</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Fog</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8544</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8544</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1 If fog was reported</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Snow</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8545</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8545</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1 If snow was reported</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Thunder</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8546</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8546</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1 If thunder and or lightning was reported</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Hail</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8547</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8547</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1 If hail was reported</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>SeaIce</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8548</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8548</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1 If sea-ice or icebergs were reported</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>TrivialCorrection</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8549</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8549</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A1</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>1 If a trivial correction was made in this observation</FONT></TD>
+    <TD width="23%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD width="20%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Release</FONT></TD>
+    <TD width="8%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>5850</FONT></TD>
+    <TD width="6%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>8569</FONT></TD>
+    <TD width="10%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>A20</FONT></TD>
+    <TD width="33%"><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2>Number of the CLIWOC release in which the current record appeared 
+      first. If corrections/modifications were made to the observation, the 
+      release number was increased to the current version</FONT></TD>
+    <TD width="23%">
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=2>Release so 
+      far:<BR>0.4: 7 Oct 2003<BR>1.0: 20 Nov 2003<BR>1.1: 23 Jan 2004<BR>1.5: 15 
+      Apr 2004<BR>2.0: 14 August 2007<BR>2.1: 25 September 2007 
+  </FONT></P></TD></TR></TBODY></TABLE>
+<DIV></DIV></BODY></HTML>
